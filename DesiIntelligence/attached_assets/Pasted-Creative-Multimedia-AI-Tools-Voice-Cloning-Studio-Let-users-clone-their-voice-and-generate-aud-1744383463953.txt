@@ -1,0 +1,78 @@
+Creative & Multimedia AI Tools
+
+Voice Cloning Studio: Let users clone their voice and generate audio (premium only).
+
+Music Generation AI: Users can compose songs in different genres or moods.
+
+2D Game Creator: Simple interface to create drag-and-drop 2D games with AI assistance.
+
+Image Editor with AI Prompts: Style transfer, background removal, and artistic filters.
+
+GIF & Meme Generator: Type a mood or moment and get auto-generated GIFs/memes.
+
+Face Animator: Animate user-uploaded images with AI-driven expressions or voice.
+
+
+Productivity & Learning
+
+Mind Map Generator: From notes or ideas, generate structured mind maps.
+
+AI Tutor Mode: Teaches school/college-level subjects interactively (ideal for Gen Z!).
+
+Flashcard & Quiz Builder: Learn with AI-generated flashcards and self-quizzes.
+
+Study Notes Summarizer: Upload PDFs or text to get instant summarized notes.
+
+Learning Path Builder: Personalized course outlines for any topic/goal.
+
+
+YouTube & Content Tools
+
+Video Script Generator: Create YouTube scripts by just entering an idea.
+
+Auto Shorts Cutter: Convert long videos to shorts based on highlights.
+
+Thumbnail Maker (AI-based): Smart suggestions and design for clickable thumbnails.
+
+SEO Optimizer: For YouTube titles, tags, and descriptions.
+
+
+AI Avatars & UX
+
+Custom AI Avatars: Users can create a visual assistant (anime, realistic, cartoon).
+
+Voice Assistant for Desi AI: Interact by voice with natural feedback.
+
+Realistic Emotions in Chat: AI shows text-based emotional response formatting.
+
+
+Tools & Utilities
+
+App/Website Ideas Generator: With full MVP planning (Gen Z entrepreneur tool).
+
+Resume & Cover Letter Maker: Smart and targeted for jobs/schools.
+
+Social Media Content Calendar: For creators to plan & automate posts.
+
+Marketing Copy Writer: Emails, product blurbs, ads—all AI-crafted.
+
+
+Customization
+
+Personalized Dashboard: Choose layout, theme, and tools shown.
+
+AI Renaming: Let users give their AI assistant a custom name & personality.
+
+Save Custom Prompts: Store favorite prompt templates for reuse.
+
+
+Premium Bonuses
+
+Priority Server Access for blazing-fast responses.
+
+50+ AI Image generations per month
+
+Unlimited Document Uploads
+
+Offline Mode (chat saved locally) for use without the net.
+
