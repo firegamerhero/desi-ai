@@ -1,1 +1,14 @@
-inidas first and best ai chatbot is here you learn anything here and even make songs and 2d and 3d games here at our powerfull ai even it can anser all your questions using internet and it have double check feature that make your anser better and as per your prompt
+# Desi AI
+
+This is a simple AI-powered web app built with Node.js and Express.
+
+## How to Run
+
+```bash
+npm install
+npm start
+```
+
+## Endpoints
+
+- POST `/api/chat` - Send a message and receive a basic AI response.

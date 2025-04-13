@@ -1,0 +1,278 @@
+/* Font import - must come first */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500&family=Yatra+One&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 98%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 19 100% 60%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 217 64% 55%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 42 100% 63%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 19 100% 60%;
+    --chart-1: 19 100% 60%;
+    --chart-2: 42 100% 63%;
+    --chart-3: 217 64% 55%;
+    --chart-4: 180 100% 50%;
+    --chart-5: 300 100% 50%;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 222.2 84% 4.9%;
+    --sidebar-primary: 19 100% 60%;
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: 42 100% 63%;
+    --sidebar-accent-foreground: 222.2 47.4% 11.2%;
+    --sidebar-border: 214.3 31.8% 91.4%;
+    --sidebar-ring: 19 100% 60%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 225 5% 12%;
+    --foreground: 210 40% 98%;
+    --card: 225 5% 15%;
+    --card-foreground: 210 40% 98%;
+    --popover: 225 5% 15%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 19 100% 60%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217 64% 55%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 215 27% 20%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 42 100% 63%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217 19% 25%;
+    --input: 217 19% 25%;
+    --ring: 19 100% 60%;
+    --chart-1: 19 100% 60%;
+    --chart-2: 42 100% 63%;
+    --chart-3: 217 64% 55%;
+    --chart-4: 180 100% 50%;
+    --chart-5: 300 100% 50%;
+    --sidebar-background: 225 5% 15%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 19 100% 60%;
+    --sidebar-primary-foreground: 222.2 47.4% 11.2%;
+    --sidebar-accent: 42 100% 63%;
+    --sidebar-accent-foreground: 222.2 47.4% 11.2%;
+    --sidebar-border: 217 19% 25%;
+    --sidebar-ring: 19 100% 60%;
+  }
+
+  * {
+    @apply border-border;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    perspective: 1000;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .message-bubble-user {
+    border-radius: 18px 18px 4px 18px;
+  }
+
+  .message-bubble-bot {
+    border-radius: 18px 18px 18px 4px;
+  }
+
+  .chat-container {
+    height: calc(100vh - 64px);
+  }
+
+  .typing-animation::after {
+    content: '...';
+    animation: typing 1.5s infinite;
+  }
+
+  @keyframes typing {
+    0%, 100% { content: '.'; }
+    33% { content: '..'; }
+    66% { content: '...'; }
+  }
+
+  .premium-badge::before {
+    content: '✦';
+    margin-right: 4px;
+  }
+
+  .indian-pattern {
+    background-image: url('data:image/svg+xml;utf8,<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 50C0 22.3858 22.3858 0 50 0C77.6142 0 100 22.3858 100 50C100 77.6142 77.6142 100 50 100C22.3858 100 0 77.6142 0 50Z" fill="none" stroke="%23FF6B35" stroke-width="0.5"/><path d="M10 50C10 27.9086 27.9086 10 50 10C72.0914 10 90 27.9086 90 50C90 72.0914 72.0914 90 50 90C27.9086 90 10 72.0914 10 50Z" fill="none" stroke="%23FF6B35" stroke-width="0.5"/><path d="M20 50C20 33.4315 33.4315 20 50 20C66.5685 20 80 33.4315 80 50C80 66.5685 66.5685 80 50 80C33.4315 80 20 66.5685 20 50Z" fill="none" stroke="%23FF6B35" stroke-width="0.5"/><path d="M30 50C30 38.9543 38.9543 30 50 30C61.0457 30 70 38.9543 70 50C70 61.0457 61.0457 70 50 70C38.9543 70 30 61.0457 30 50Z" fill="none" stroke="%23FF6B35" stroke-width="0.5"/></svg>');
+    background-size: 300px;
+    background-blend-mode: overlay;
+    opacity: 0.05;
+  }
+
+  /* Enhanced Indian theme components */
+  .font-brand {
+    font-family: 'Yatra One', cursive;
+  }
+
+  /* Tricolor-inspired gradients */
+  .tricolor-gradient {
+    background: linear-gradient(to right, 
+      rgba(255, 153, 51, 0.7) 0%, 
+      rgba(255, 255, 255, 0.7) 50%, 
+      rgba(19, 136, 8, 0.7) 100%
+    );
+  }
+
+  .tricolor-border {
+    border-image: linear-gradient(
+      to right, 
+      #FF9933, 
+      #FFFFFF, 
+      #138808
+    ) 1;
+  }
+
+  /* Rangoli-inspired decoration */
+  .rangoli-bg {
+    background-image: 
+      radial-gradient(circle at 10% 20%, rgba(255, 153, 51, 0.2) 10%, transparent 30%),
+      radial-gradient(circle at 90% 30%, rgba(19, 136, 8, 0.15) 10%, transparent 30%),
+      radial-gradient(circle at 50% 80%, rgba(255, 223, 0, 0.1) 15%, transparent 30%);
+  }
+
+  /* Message styles with Indian-inspired colors */
+  .message-user {
+    background: linear-gradient(135deg, rgba(255, 153, 51, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+    border-left: 3px solid #FF9933;
+  }
+
+  .message-assistant {
+    background: linear-gradient(135deg, rgba(19, 136, 8, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
+    border-left: 3px solid #138808;
+  }
+
+  /* Ashoka Chakra inspired spinner */
+  .chakra-spinner {
+    width: 24px;
+    height: 24px;
+    border: 3px solid rgba(19, 136, 8, 0.3);
+    border-top: 3px solid #138808;
+    border-radius: 50%;
+    animation: chakra-spin 1s linear infinite;
+  }
+
+  @keyframes chakra-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  /* Diwali-inspired glowing effect */
+  .diwali-glow {
+    box-shadow: 0 0 5px rgba(255, 153, 51, 0.5);
+    animation: glow 2s infinite alternate;
+  }
+
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 5px rgba(255, 153, 51, 0.5);
+    }
+    to {
+      box-shadow: 0 0 15px rgba(255, 153, 51, 0.8);
+    }
+  }
+
+  /* Paisley pattern for accents */
+  .paisley-accent {
+    position: relative;
+  }
+
+  .paisley-accent::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.05;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><path d="M30 10C17 10 10 20 10 30S17 50 30 50s20-10 20-20S43 10 30 10zm0 35c-9.4 0-15-7.5-15-15S20.6 15 30 15s15 7.5 15 15-5.6 15-15 15z" fill="%23FF6B35"/></svg>');
+    pointer-events: none;
+  }
+
+  @keyframes pulse-glow {
+    0% { box-shadow: 0 0 5px rgba(var(--primary-500), 0.5); }
+    50% { box-shadow: 0 0 20px rgba(var(--primary-500), 0.8); }
+    100% { box-shadow: 0 0 5px rgba(var(--primary-500), 0.5); }
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s infinite;
+  }
+
+  /* Add any custom styles here */
+}
+
+/* Define custom color classes for the Indian-inspired theme */
+:root {
+  --color-primary-50: #FFF3F0;
+  --color-primary-100: #FFE6DE;
+  --color-primary-200: #FFCCBD;
+  --color-primary-300: #FFA990;
+  --color-primary-400: #FF8B69;
+  --color-primary-500: #FF6B35; /* Primary Indian Orange */
+  --color-primary-600: #F55520;
+  --color-primary-700: #E04210;
+  --color-primary-800: #B93100;
+  --color-primary-900: #8A2500;
+
+  --color-secondary-50: #EFF6FF;
+  --color-secondary-100: #DBEAFE;
+  --color-secondary-200: #BFDBFE;
+  --color-secondary-300: #93C5FD;
+  --color-secondary-400: #60A5FA;
+  --color-secondary-500: #4F86C6; /* Royal Blue */
+  --color-secondary-600: #2563EB;
+  --color-secondary-700: #1D4ED8;
+  --color-secondary-800: #1E40AF;
+  --color-secondary-900: #1E3A8A;
+
+  --color-accent-300: #FFEDB8;
+  --color-accent-400: #FFD47F;
+  --color-accent-500: #FFBC42; /* Marigold Yellow */
+  --color-accent-600: #FAAB00;
+  --color-accent-700: #C78600;
+
+  --color-dark-100: #636363;
+  --color-dark-200: #4D4D4D;
+  --color-dark-300: #3D3D3D;
+  --color-dark-400: #2E2E2E;
+  --color-dark-500: #1E1E1E;
+  --color-dark-600: #121212;
+}
+
+/* Font definition */
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
